@@ -5,25 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
-    <title>Message Encrypto</title>
+    <title>Message Encryptor</title>
 
     <style>
+        body{
+            background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+        }
         .row{
             margin-top: 30vh;
         }
         h1{
             margin: 1.5%;
         }
+        .navBar{
+            justify-content: center;
+            padding-right: 45%;
+            font-size: 1.5rem !important;
+        }
+        .logo{
+            width: 20%;
+            height: 45px;
+            margin-top: 3%;
+            margin-left: 5%;
+        }
+        nav,.btn{
+            background-color: rgb(0,58,112) !important;
+        }
     </style>
 
 </head>
 <body>
-
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">
+                <img src="logo.png" alt="Logo" class="logo">
+            </a>       
+            
+            <ul id="nav-mobile" class="right hide-on-med-and-down navBar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </nav>    
     <div class="row">
         <div class="col s8 offset-s2">
             <div id="message-show" class="card-panel hide">
                 <h1></h1>
-                  <a href="/index.html">Create Your Own Encrypted Message</a>
+                  <a href="/index.html" class="btn">Create Your Own Encrypted Message</a>
             </div>
             <div id="message-form" class="card-panel">
                 <form action="">
