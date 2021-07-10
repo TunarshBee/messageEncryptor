@@ -4,7 +4,7 @@ const message = atob(hash.replace("#", " "));
 if (message) {
     document.querySelector('#message-form').classList.add('hide')
     document.querySelector("#message-show").classList.remove('hide')
-
+    document.querySelector(".welcome").classList.add('hide')
     document.querySelector('h1').innerHTML=message
 }
 
